@@ -20,7 +20,9 @@ public class Property {
      * @param price The property price.
      */
     public Property(String description, double price) {
-        this.model = description;
+        if(description!=null){
+            this.model=description;
+        }
         this.price = price;
         this.id = null;
     }
